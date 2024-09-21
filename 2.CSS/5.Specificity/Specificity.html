@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <!-- Specificity Order:
+Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector
+
+ -->
+    <style>
+        .yellow {
+            color: yellow;
+        }
+/* If we add important it's overwrite all even inline styles */
+        .cred {
+            color: red !important;
+        }
+
+        .cpurple {
+            color: purple;
+        }
+
+        h1 {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Cascade Algorithm for Specificity</h1>
+        <p>Position and order of appearance: the order in which your CSS rules appear</p>
+        <p>Specificity: an algorithm that determines which CSS selector has the strongest match</p>
+        <p>Origin: the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a
+            browser extension, or your authored CSS</p>
+        <p>Importance: some CSS rules are weighted more heavily than others, especially with the !important rule type
+            Lets look into all these one by one</p>
+    </div>
+    <div>
+        <h1 class="yellow cred cpurple">CSS Specificity</h1>
+    </div>
+
+    <div>
+        <h1>Technique</h1>
+        <p>To calculate specificity, assign a value to each part of the selector:
+
+        <p>Universal Selector: 0</p>
+        <p>Element selectors and pseudo-elements: 1</p>
+        <p>Class selectors, attribute selectors, and pseudo-classes: 10</p>
+        <p>ID selectors: 100</p>
+        <p> Inline styles: 1000</p>
+    </div>
+</body>
+
+</html>

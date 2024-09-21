@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: brown;
+        } */
+         /* .box::first-line{
+            color: red;
+         } */
+          /* .boxes *{
+               color: blue;
+               border: 2px solid black;
+          }
+          /* Grouping */
+       /*  p,a,.box, [data-color="primary"]{
+            margin-top: 45px;
+          } */
+        /* .box:nth-child(even){
+            background-color: aqua;
+        } */
+         /* .box:last-child{
+            background-color: bisque;
+         } */
+
+         /* Pseudo Elements */
+        /* .boxes::before{
+            content: "I am here";
+        }
+        .boxes::after{
+            content: "After effect";
+        } */
+         /* Selcted elements style */
+         /* ::selection{
+            color: aqua;
+            background-color: black;
+         } */
+
+        .box::first-letter{
+            color: brown;
+        }
+       input::placeholder{
+        color: rgb(49, 74, 210);
+       }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores consequatur itaque, delectus sit veniam impedit vero laborum quae facere quos deserunt sint pariatur corrupti obcaecati magni molestiae architecto voluptatum quo exercitationem. Animi repudiandae officia quidem? Consequatur sequi quia fuga. Aliquam quam soluta eum cupiditate commodi, aut esse dignissimos quos recusandae ducimus, natus dolorum numquam voluptatibus tenetur? Natus molestias nihil asperiores reiciendis quam ducimus! Ad vitae expedita repellendus provident aspernatur perspiciatis enim quidem aliquam harum saepe repellat in dolor reprehenderit laboriosam ab pariatur fugit, totam repudiandae velit, sapiente et? Error atque tempora mollitia. Numquam, totam velit magni autem inventore mollitia alias!</div>
+        <div data-color="primary" class="box">It's a box</div>
+        <div class="box">It's a box</div>
+        <input type="text" placeholder="Type your name">
+    </div>
+</body>
+</html>
